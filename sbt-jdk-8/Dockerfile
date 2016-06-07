@@ -1,4 +1,4 @@
-FROM java:openjdk-8-jdk
+FROM java:openjdk-8
 
 ENV SBT_VERSION 0.13.11
 
