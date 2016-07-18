@@ -1,7 +1,7 @@
 FROM java:openjdk-8
 
 # Install SBT
-ENV SBT_VERSION 0.13.11
+ENV SBT_VERSION 0.13.12
 
 RUN mkdir -p /usr/share/sbt && \
     curl -kfsSL https://dl.bintray.com/sbt/native-packages/sbt/$SBT_VERSION/sbt-$SBT_VERSION.tgz \
@@ -13,7 +13,7 @@ ENV SBT_HOME /usr/share/sbt
 VOLUME /root/.sbt
 
 # Install Node
-ENV NODE_VERSION 6.2.1
+ENV NODE_VERSION 6.3.0
 
 RUN set -ex \
   && for key in \
