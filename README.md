@@ -16,5 +16,5 @@ Docker images that embeds
 
 The image is build using:
 
-    $ docker build -t bdorville/sbt-node:0.13.12-6.3.0
+    $ docker build -t bdorville/sbt-node:0.13.12-6.4.0
 
