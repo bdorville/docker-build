@@ -13,7 +13,7 @@ ENV SBT_HOME /usr/share/sbt
 VOLUME /root/.sbt
 
 # Install Node
-ENV NODE_VERSION 6.4.0
+ENV NODE_VERSION 6.5.0
 
 RUN set -ex \
   && for key in \
