@@ -1,6 +1,6 @@
 FROM java:openjdk-8
 
-ENV SBT_VERSION 0.13.12
+ENV SBT_VERSION 0.13.13
 
 RUN mkdir -p /usr/share/sbt && \
     curl -kfsSL https://dl.bintray.com/sbt/native-packages/sbt/$SBT_VERSION/sbt-$SBT_VERSION.tgz \
