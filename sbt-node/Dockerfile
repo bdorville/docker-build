@@ -1,7 +1,7 @@
 FROM java:openjdk-8
 
 # Install SBT
-ENV SBT_VERSION 0.13.13
+ENV SBT_VERSION 0.13.15
 
 RUN mkdir -p /usr/share/sbt && \
     curl -kfsSL https://dl.bintray.com/sbt/native-packages/sbt/$SBT_VERSION/sbt-$SBT_VERSION.tgz \
@@ -29,7 +29,7 @@ RUN set -ex \
   done
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 7.1.0
+ENV NODE_VERSION 8.1.2
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
