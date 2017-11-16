@@ -1,6 +1,6 @@
 FROM java:openjdk-8
 
-ENV SBT_VERSION 1.0.0
+ENV SBT_VERSION 1.0.3
 
 RUN mkdir -p /usr/share/sbt && \
     curl -kfsSL https://github.com/sbt/sbt/releases/download/v$SBT_VERSION/sbt-$SBT_VERSION.tgz \
