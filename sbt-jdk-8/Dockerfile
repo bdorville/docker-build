@@ -1,6 +1,6 @@
 FROM openjdk:jdk-alpine
 
-ENV SBT_VERSION 1.0.3
+ENV SBT_VERSION 1.2.0
 
 RUN apk update && apk upgrade && \
     apk add bash curl tar bc && \
